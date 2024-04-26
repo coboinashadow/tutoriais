@@ -1,0 +1,13 @@
+{
+  "name": "simple-pwa-chess",
+  "short_name": "PWA Chess",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "pwa-config/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
