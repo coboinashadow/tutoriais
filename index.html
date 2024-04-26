@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Tutoriais</title>
+	<meta name="description" content="Tutoriais sobre programação para jogos em diversas linguagens de programação. Desenvolvimento de software a partir da programação." />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="resources/favicon.ico" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/home.css" />
+	<link rel="stylesheet" href="css/animacoes.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1><a onclick="acessar(parseInt(Math.random() * 18));"><span>Tutoriais</span></a></h1>
+	<main>
+
+<div id="menu">
+<section class="slider-wrapper">
+	<button class="slide-arrow" id="slide-arrow-prev" onclick="document.getElementById('slides-container').scrollLeft -= document.querySelector('.slide').clientWidth;">&#8249;</button>
+	<button class="slide-arrow" id="slide-arrow-next" onclick="document.getElementById('slides-container').scrollLeft += document.querySelector('.slide').clientWidth;">&#8250;</button>
+
+<ul class="slides-container" id="slides-container">
+
+	<li class="slide">
+		<a href="0.html" class="tutorial" id="link0"><div>Joe Jumper</div><b>Tipo: desktop</b><br>linguagem: C<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+		<a href="1.html" class="tutorial" id="link1"><div>Zombie Waves</div><b>Tipo: mobile</b><br>linguagem: java<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="2.html" class="tutorial" id="link2"><div>Xadrez</div><b>Tipo: browser</b><br>linguagem: javascript<small>Indicado para<br><b>Avançados</b></small><br><button>acessar</button></a>
+	</li>
+
+	<li class="slide">
+		<a href="3.html" class="tutorial" id="link3"><div>Database</div><b>Tipo: servidores</b><br>linguagem: php<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="4.html" class="tutorial" id="link4"><div>Campo Minado</div><b>Tipo: mobile</b><br>linguagem: java<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="5.html" class="tutorial" id="link5"><div>Jogo de Corrida</div><b>Tipo: desktop</b><br>linguagem: javascript<small>Indicado para<br><b>Avançados</b></small><br><button>acessar</button></a>
+	</li>
+
+	<li class="slide">
+		<a href="6.html" class="tutorial" id="link6"><div>Logo Maker</div><b>Tipo: front end</b><br>linguagens: css - js<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+		<a href="7.html" class="tutorial" id="link7"><div>Breakout</div><b>Tipo: browser</b><br>linguagem: javascript<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="8.html" class="tutorial" id="link8"><div>Square Motor</div><b>Tipo: mobile</b><br>linguagem: kotlin<small>Indicado para<br><b>Avançados</b></small><br><button>acessar</button></a>
+	</li>
+
+	<li class="slide">
+		<a href="9.html" class="tutorial" id="link9"><div>Site Simples</div><b>Tipo: web</b><br>linguagem: html<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+		<a href="10.html" class="tutorial" id="link10"><div>Endless Runner</div><b>Tipo: desktop</b><br>linguagem: python<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+		<a href="11.html" class="tutorial" id="link11"><div>Snake</div><b>Tipo: desktop</b><br>linguagem: C<small>Indicado para<br><b>Avançados</b></small><br><button>acessar</button></a>
+	</li>
+
+	<li class="slide">
+		<a href="12.html" class="tutorial" id="link12"><div>Rocket Attack</div><b>Tipo: desktop</b><br>linguagem: hta<small>Indicado para<br><b>Avançados</b></small><br><button>acessar</button></a>
+		<a href="13.html" class="tutorial" id="link13"><div>Screenshot</div><b>Tipo: mobile</b><br>linguagem: java<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="14.html" class="tutorial" id="link14"><div>Shuffle Faces</div><b>Tipo: desktop</b><br>linguagem: hta<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+	</li>
+
+	<li class="slide">
+		<a href="15.html" class="tutorial" id="link15"><div>Harry Leap</div><b>Tipo: mobile</b><br>linguagem: java<small>Indicado para<br><b>Intermediários</b></small><br><button>acessar</button></a>
+		<a href="16.html" class="tutorial" id="link16"><div>Números Primos</div><b>Tipo: web</b><br>linguagem: javascript<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+		<a href="17.html" class="tutorial" id="link17"><div>Armazenamento</div><b>Tipo: desktop</b><br>textos e imagens<small>Indicado para<br><b>Iniciantes</b></small><br><button>acessar</button></a>
+	</li>
+
+</ul>
+</section>
+</div>
+
+	</main>
+	<footer>
+		<button onclick="alert('https://www.instagram.com/rodrigoschio1982');">conversa</button>
+	</footer>
+</body>
+<script src="js/home.js"></script>
+</html>
