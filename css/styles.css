@@ -1,0 +1,122 @@
+﻿:root {
+	--link: #79a7ff;           /* link / accent */
+	--titulos: #f8f8f8;        /* títulos (h2, h3) */
+	--bold: #ffffff;           /* texto forte / b */
+	--bordaDestaque: #3a3f45;  /* borda mais visível */
+	--bordaDiscreta: #222427;  /* borda discreta / inputs / imagens */
+	--bgTitulos: #222425;      /* fundo das caixas de título */
+	--bgPagina: #0f1112;       /* fundo da página */
+	--text: #d8d8d8;           /* texto principal */
+	--articleBg: #121416;      /* fundo dos artigos */
+}
+
+body {
+	margin: 0px;
+	font-family: "Segoe Ui", system-ui, -apple-system, "Helvetica Neue", Arial;
+	background-color: var(--bgPagina);
+	color: var(--text);
+}
+
+a {
+	color: var(--link);
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+article {
+	border-radius: 16px 0 0 0;
+	border: 2px dashed var(--bordaDestaque);
+	margin-bottom: 20px;
+	padding: 2px 20px 20px 12px;
+}
+
+b {
+	color: var(--bold);
+}
+
+footer {
+	border: 1px solid var(--bordaDiscreta);
+	background-size: 292px;
+	background-position-y: -52px;
+	text-align: right;
+	padding: 8px 10px;
+}
+
+footer button {
+	width: 70px;
+	margin: 9px 3px 8px;
+	background: transparent;
+	color: var(--text);
+	border: 1px solid var(--bordaDiscreta);
+	padding: 6px 8px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+footer button:last-child {
+	margin-right: 10px;
+}
+
+h1 {
+	background-color: var(--bgTitulos);
+	margin-top: 0px;
+}
+
+h1 a {
+	display: block;
+	padding: 28px 30px 30px 32px;
+	font-family: Courier, monospace;
+	font-size: 42px;
+	letter-spacing: 4px;
+	user-select: none;
+}
+
+h2 {
+	background-color: var(--bgTitulos);
+	padding: 12px 10px 10px 14px;
+	color: var(--titulos);
+	border-radius: 8px 0px 0px 0px;
+	border-bottom: 12px double var(--bgPagina);
+	margin: 6px -12px 8px -4px;
+}
+
+h3 {
+	background-color: var(--bgTitulos);
+	padding: 4px 7px 8px 14px;
+	border-bottom: 12px double var(--bgPagina);
+	color: var(--titulos);
+}
+
+li {
+	margin-left: 20px;
+}
+
+main {
+	margin: 0px 20px 20px;
+	min-height: calc(100vh - 185px);
+}
+
+.imagem {
+	width: 100%;
+	max-width: 500px;
+	cursor: pointer;
+	border: 1px solid var(--bordaDiscreta);
+	filter: none;
+	border-radius: 6px;
+	background-color: rgba(255,255,255,0.01);
+}
+
+.imagem:hover {
+	transform: translateY(-4px);
+	filter: brightness(1.05);
+}
+
+#coment {
+	margin: 30px 20px -10px 20px;
+}
+
+:focus {
+	outline: 3px solid rgba(121,167,255,0.2);
+	outline-offset: 2px;
+}

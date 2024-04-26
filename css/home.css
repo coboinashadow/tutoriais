@@ -1,0 +1,142 @@
+article small {
+	font-size: 14px;
+	font-weight: bold;
+	float: right;
+	background-color: var(--bgTitulos);
+	border-bottom: 12px double var(--bgPagina);
+	padding: 2px 12px 6px 12px;
+	margin: -40px -12px 0px 0px;
+	color: var(--titulos);
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+h2 b {
+	font-family: "Indie Flower";
+	font-weight: 400;
+}
+
+main {
+	max-width: 1020px;
+	margin: auto;
+	padding: 4px 20px 20px;
+}
+
+.slide-arrow {
+	display: none;
+}
+
+.slides-container {
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 600px) {
+	.slide {
+		width: 100%;
+		height: 100%;
+		flex: 1 0 100%;
+	}
+
+	.slide-arrow {
+		position: absolute;
+		display: flex;
+		top: 0px;
+		bottom: 0px;
+		margin: auto;
+		height: 4rem;
+		background-color: var(--bgTitulos);
+		color: var(--link);
+		border: 1px solid var(--bordaDestaque);
+		width: 2rem;
+		font-size: 3rem;
+		padding: 0px;
+		cursor: pointer;
+	}
+
+	#slide-arrow-prev {
+		left: 0px;
+		padding-left: 0.25rem;
+		border-radius: 0px 2rem 2rem 0px;
+	}
+
+	#slide-arrow-next {
+		right: 0px;
+		padding-left: 0.75rem;
+		border-radius: 2rem 0px 0px 2rem;
+	}
+
+	.slider-wrapper {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.slides-container {
+		width: 100%;
+		display: flex;
+		margin: 12px 0px 0px 0px;
+		padding: 0px;
+		overflow: scroll;
+	}
+
+	.slides-container::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	}
+}
+
+.tutorial {
+	color: var(--link);
+	border: 2px dashed var(--bordaDestaque);
+	display: inline-block;
+	padding: 8px;
+	font-size: 13px;
+	border-radius: 16px;
+	margin: 8px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.tutorial button{
+	cursor: pointer;
+	padding: 8px;
+	display: block;
+	width: 278px;
+	margin-top: 28px;
+	border: 1px solid var(--bordaDestaque);
+	color: var(--link);
+	background-color: var(--bgTitulos);
+	font-size: 16px;
+	border-radius: 8px;
+}
+
+.tutorial div {
+	background-size: 80px;
+	background-position: 216px -6px;
+	background-repeat: no-repeat;
+	background-color: var(--bgTitulos);
+	padding-top: 8px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 12px double var(--bgPagina);
+	font-family: "Indie Flower";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+}
+
+.tutorial small {
+	font-size: 15px;
+	color: var(--bold);
+	position: relative;
+	float: right;
+	text-align: right;
+}
+
+#menu {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: -18px;
+}
